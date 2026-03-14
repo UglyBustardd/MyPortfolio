@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алексей Петров - Full-Stack разработчик</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Алексей Петров</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Привет, я <span class="highlight">Алексей Петров</span></h1>
+                <h2>Full-Stack разработчик</h2>
+                <p>Создаю современные веб-приложения с использованием передовых технологий</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Посмотреть мои проекты</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться со мной</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Обо мне</h2>
+                    <p>Я опытный Full-Stack разработчик с более чем 5-летним опытом создания веб-приложений. Я специализируюсь на современных фреймворках и технологиях, таких как React, Node.js и Python.</p>
+                    <p>Моя страсть - создание эффективных, масштабируемых и удобных веб-решений, которые помогают бизнесу достигать своих целей. Я всегда стремлюсь к написанию чистого, поддерживаемого кода и следую лучшим практикам разработки.</p>
+                    <p>Я активно участвую в open-source проектах и постоянно изучаю новые технологии, чтобы оставаться в курсе последних тенденций в области веб-разработки.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="Алексей Петров">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Навыки и компетенции</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress-level" data-level="90%"></div>
+                    </div>
+                    <p>Опыт работы с ES6+, async/await, DOM manipulation</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress-level" data-level="85%"></div>
+                    </div>
+                    <p>Компонентная архитектура, hooks, Redux, React Router</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress-level" data-level="80%"></div>
+                    </div>
+                    <p>Express, REST APIs, MongoDB, authentication</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress-level" data-level="75%"></div>
+                    </div>
+                    <p>Django, Flask, Pandas, data analysis</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress-level" data-level="85%"></div>
+                    </div>
+                    <p>PostgreSQL, MySQL, query optimization</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Дополнительно</h3>
+                    <div class="progress-bar">
+                        <div class="progress-level" data-level="90%"></div>
+                    </div>
+                    <p>Git, Docker, CI/CD, Agile, Testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Проект 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Система управления задачами</h3>
+                        <p>Веб-приложение для управления проектами и задачами с командной работой. Использовались React, Node.js и MongoDB.</p>
+                        <div class="tech-stack">
+                            <span class="tech">React</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-small btn-outline">Демо</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Проект 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Электронная коммерция</h3>
+                        <p>Полнофункциональный интернет-магазин с корзиной покупок, системой оплаты и админ-панелью.</p>
+                        <div class="tech-stack">
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Express</span>
+                            <span class="tech">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-small btn-outline">Демо</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Проект 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Аналитическая платформа</h3>
+                        <p>Платформа для анализа данных с визуализацией и отчетами. Использовались Python, Django и D3.js.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Django</span>
+                            <span class="tech">D3.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-small btn-outline">Демо</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Связаться со мной</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>alexey.petrov@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+7 (XXX) XXX-XX-XX</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Москва, Россия</p>
+                    </div>
+                    <div class="social-links contact-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Алексей Петров. Все права защищены.</p>
+            <div class="social-links footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
