@@ -1,0 +1,53 @@
+/* STYLES */
+@import url(./nav.css);
+@import url(./main.css);
+@import url(./footer.css);
+@import url(./signUp.css);
+
+/* FONTS */
+@font-face {
+    font-family: "Architectural";
+    src: url(../assets/fonts/Architectural/Architectural.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Yanone";
+    src: url(../assets/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cavet";
+    src: url(../assets/fonts/Cavet/Caveat-VariableFont_wght.ttf);
+}
+
+/* VARS */
+:root {
+    --color-yellow: #f7ec5e;
+    --color-orange: #e5aa21;
+    --color-white: #fdfdfd;
+    --color-grey: #bebebe;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Architectural;
+}
+
+body {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    background: linear-gradient(270deg, #929090, #323232) no-repeat cover;
+    /*background-color: #323232; */
+}
+
+.button {
+    cursor: pointer;
+}
+
+.text-input {
+    cursor: text;
+}

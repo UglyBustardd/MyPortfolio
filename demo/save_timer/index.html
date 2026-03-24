@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Helper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ЩГПС</h1>
+        <select name="" id="soil">
+            <option value="c1">ЩГПС С1</option>
+            <option value="c2">ЩГПС С2</option>
+            <option value="c4">ЩГПС С4</option>
+            <option value="c5">ЩГПС С5</option>
+            <option value="c10">ЩГПС С10</option>
+        </select>
+        <input id="quantity" type="number" min="1" max="100" placeholder="1">
+        <table contenteditable="true">
+            <thead>
+                <tr>
+                    <th>70</th>
+                    <th>40</th>
+                    <th>20</th>
+                    <th>15</th>
+                    <th>10</th>
+                    <th>5</th>
+                    <th>2,5</th>
+                    <th>1,25</th>
+                    <th>0,63</th>
+                    <th>0,315</th>
+                    <th>0,16</th>
+                    <th>0,05</th>
+                    <th><</th>
+                </tr>
+                <tr>
+                    <th><input  id="value1" type="number"></th>
+                    <th><input id="value2" type="number"></th>
+                    <th><input id="value3" type="number"></th>
+                    <th><input id="value4" type="number"></th>
+                    <th><input id="value5" type="number"></th>
+                    <th><input id="value6" type="number"></th>
+                    <th><input id="value7" type="number"></th>
+                    <th><input id="value8" type="number"></th>
+                    <th><input id="value9" type="number"></th>
+                    <th><input id="value10" type="number"></th>
+                    <th><input id="value11" type="number"></th>
+                    <th><input id="value12" type="number"></th>
+                    <th><input id="value13" type="number"></th>
+                </tr>
+            </thead>
+        </table>
+        <div class="block">
+            <h2>Глина в комках:</h2>
+            <input id="clay" type="text" placeholder="0.00">
+            <h2>Дробимость:</h2>
+            <input id="crushability" type="text" placeholder="0.00">
+            <h2>Насыпная плотность:</h2>
+            <input id="density" type="text" placeholder="0.00">
+        </div>
+        <button id="start" onclick="addSieve()">Создать</button>
+    </header>
+    <main>
+    </main>
+<script src="js/random.js" async></script>
+<script src="js/additions.js" async></script>
+</body>
+</html>

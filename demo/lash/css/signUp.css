@@ -1,0 +1,64 @@
+.SignUp {
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    font-size: 2.5rem;
+    color: #000;
+    
+    a {
+        margin: auto;
+        font-size: 4rem;
+        text-decoration: none;
+        color: var(--color-yellow);
+
+        &:hover {
+            transform: scale(1.05);
+            text-decoration: underline;
+        }
+    }
+
+    input {
+        width: 500px;
+        margin: auto;
+        font-size: 2.5rem;
+        text-align: center;
+        background: none;
+        border: none;
+    }
+
+    select {
+        width: 500px;
+        margin: auto;
+        font-size: 2.5rem;
+        text-align: center;
+        background: none;
+        border: none;
+    }
+
+    option {
+        background: none;
+        border: none;
+        /* глянь почему не пропадает обводка */
+    }
+
+    button {
+        border: solid 2px var(--color-orange);
+        border-radius: 50px;
+        background: none;
+        font-size: 3.5rem;
+        /* Сделать текст шире, но не жирным, добавь обводку */
+        text-decoration: none;
+        color: var(--color-yellow);
+        height: 65px;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+
+        &:hover {
+            transform: scale(1.05);
+            /* text-decoration: underline; */
+        }
+    }
+}

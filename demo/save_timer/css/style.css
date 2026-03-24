@@ -1,0 +1,127 @@
+@import url(../css/forJs.css);
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../Fonts/Roboto/Roboto-Black.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+body {
+    background: radial-gradient(#bebebe, #f4f4f4, #fff, #ffffff3c, #fff, #f4f4f4, #fff);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 5vh auto;
+    text-align: center;
+    height: 65vh;
+    gap: 4%;
+    padding: 30px 0;
+
+    h1 {
+        font-size: 5rem;
+        cursor: default;
+    }
+    select, input {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        border: solid 2px #000;
+        border-radius: 50px;
+        height: 70px;
+        width: 22vw;
+        margin: auto;
+        background: transparent;
+        outline: none;
+
+        &::placeholder {
+            color: #000;
+        }
+        option {
+            color: #fff;
+            background: #bebebe;
+            
+        }
+    }
+
+    table {
+        border: solid 2px #000;
+        margin: 30px auto;
+        font-size: 1.6rem;
+
+        th {
+            border: solid #000 2px;
+            background: #bebebe;
+        }
+        input {
+            border: none;
+            width: 5vw;
+            height: 3vh;
+            border-radius: 0;
+            background: #bebebe;
+            font-size: 1.6rem;
+        }
+    }
+    button {
+        margin: auto;
+        width: 14vw;
+        height: 6vh;
+        border: solid 3px;
+        border-radius: 100px;
+        font-size: 1.7rem;
+        font-weight: bold;
+        background-color: transparent;
+
+        &:hover {
+            transform: scale(1.1);
+            background: #f4f4f4;
+        }
+    }
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    margin: 0 auto 5vh;
+    gap: 3vh;
+
+    h2 {
+        margin: auto;
+        padding: 0 0 0 3vh;
+        text-wrap: nowrap;
+        font-size: 2rem;
+    }
+    input {
+        border: none;
+        outline: none;
+        border-bottom: solid 3px black;
+        border-radius: 0;
+        height: 2rem;
+        font-size: 2rem;
+
+        &::placeholder {
+            color: #00000031;
+        }
+    }
+}
+
+main {
+    margin: 25vh auto;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
