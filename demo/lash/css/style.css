@@ -3,6 +3,7 @@
 @import url(./main.css);
 @import url(./footer.css);
 @import url(./signUp.css);
+@import url(./backToMain.css);
 
 /* FONTS */
 @font-face {
@@ -27,6 +28,7 @@
     --color-orange: #e5aa21;
     --color-white: #fdfdfd;
     --color-grey: #bebebe;
+    --transition: all 0.3s ease;
 }
 
 * {
