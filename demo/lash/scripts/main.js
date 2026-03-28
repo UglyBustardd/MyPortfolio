@@ -1,4 +1,3 @@
-
 function userInfo() {
   let name = document.getElementById("name").value;
   let effect = document.getElementById("effect").value;
@@ -67,3 +66,19 @@ for (let i = 0; i < pictures.length; i++) {
     }
   });
 }
+
+// Логика скрытия/отображения навигационного меню при прокрутке
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', function() {
+  const currentScrollPos = window.pageYOffset;
+  const navbar = document.querySelector('nav');
+  
+  if (prevScrollPos > currentScrollPos) {
+    navbar.classList.remove('hidden');
+  } else {
+    navbar.classList.add('hidden');
+  }
+  
+  prevScrollPos = currentScrollPos;
+});

@@ -9,12 +9,17 @@ nav {
     padding: auto;
     z-index: 99999;
     /* Воткни на фон какую-то фотку */
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.hidden {
+    transform: translateY(-120%);
 }
 .nav_icons {
     margin: 1vh 5vh;
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: bold;
     a {
         color: var(--color-yellow);
         font-size: 65px;
