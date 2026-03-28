@@ -17,6 +17,7 @@
     src: url(../assets/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf);
     font-display: swap;
 }
+
 @font-face {
     font-family: "Cavet";
     src: url(../assets/fonts/Cavet/Caveat-VariableFont_wght.ttf);
@@ -28,7 +29,7 @@
     --color-orange: #e5aa21;
     --color-white: #fdfdfd;
     --color-grey: #bebebe;
-    --transition: all 0.3s ease;
+    --transition: all 0.4s ease;
 }
 
 * {
@@ -52,4 +53,19 @@ body {
 
 .text-input {
     cursor: text;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -10;
+    width: 0;
+    height: 4px;
+    background-color: var(--color-yellow);
+    transition: var(--transition);
+}
+
+a:hover::after {
+    width: calc(100% + 20px);
 }
