@@ -121,6 +121,38 @@ header {
 /* Основная часть страницы */
 /* Мои работы */
 .MyWorks {
+
+    /*Кнопки для карусели*/
+    #btn-left,
+    #btn-right {
+        aspect-ratio: 1/1;
+        height: 58px;
+        border-radius: 100%;
+        border: solid var(--color-yellow) 3px;
+        background: transparent;
+        position: relative;
+        top: 440px;
+        z-index: 9999;
+
+        &:hover {
+            transform: scale(1.2);
+            transition: var(--transition);
+        }
+
+        img {
+            height: 100%
+        }
+    }
+
+    #btn-left {
+        left: 1.5%;
+    }
+
+    #btn-right {
+        left: 92.5%;
+    }
+
+
     #works {
         margin: auto;
         display: grid;
