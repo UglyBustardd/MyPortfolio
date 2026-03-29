@@ -55,7 +55,7 @@ body {
     cursor: text;
 }
 
-a::after {
+.hover-underline::after {
     content: '';
     position: absolute;
     bottom: 10px;
@@ -66,6 +66,6 @@ a::after {
     transition: var(--transition);
 }
 
-a:hover::after {
+.hover-underline:hover::after {
     width: calc(100% + 20px);
 }
