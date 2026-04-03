@@ -6,11 +6,11 @@ function userInfo() {
 
 const worksField = document.getElementById("works");
 const pictures = [
-document.getElementById("p1"),
-document.getElementById("p2"),
-document.getElementById("p3"),
-document.getElementById("p4"),
-document.getElementById("p5")
+  document.getElementById("p1"),
+  document.getElementById("p2"),
+  document.getElementById("p3"),
+  document.getElementById("p4"),
+  document.getElementById("p5")
 ];
 
 // Функция для сброса всех стилей к исходным
@@ -32,15 +32,15 @@ for (let i = 0; i < pictures.length; i++) {
     } else {
       // Сначала сбрасываем все стили
       resetStyles();
-      
+
       // Применяем активный стиль ко всем изображениям
       for (let j = 0; j < pictures.length; j++) {
         pictures[j].classList.add("active-picture-field");
       }
-      
+
       // Устанавливаем соответствующую сетку в зависимости от индекса изображения
       let gridColumns;
-      switch(i) {
+      switch (i) {
         case 0:
           gridColumns = "24fr 3fr 3fr 3fr 3fr";
           break;
@@ -70,15 +70,40 @@ for (let i = 0; i < pictures.length; i++) {
 // Логика скрытия/отображения навигационного меню при прокрутке
 let prevScrollPos = window.pageYOffset;
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const currentScrollPos = window.pageYOffset;
   const navbar = document.querySelector('nav');
-  
+
   if (prevScrollPos > currentScrollPos) {
     navbar.classList.remove('hidden');
   } else {
     navbar.classList.add('hidden');
   }
-  
+
   prevScrollPos = currentScrollPos;
+});
+
+// Работа бургер меню
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.nav_icons');
+const menuLinks = document.querySelectorAll('.nav_icons a'); // Ссылки внутри меню
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 992) {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+  }
 });
